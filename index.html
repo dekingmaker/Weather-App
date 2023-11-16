@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input id="inputField" placeholder="enter city name" spellcheck="false"> </input>
+            <button onclick="getValue()"> <img src="data:image/png;base64,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" height="15px" width="15px"</button>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <div>
+                    <img src="/images/humidity.png" alt="" srcset="">
+                         <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div> 
+                        <div>
+                        <img src="/images/wind.png" alt="" srcset="">
+                        <div class="windspeed">15km/h</div>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer>
+          <h2>Weather for Fresh Coast</h2>
+          <p><small>Learn more about <a href="#">weather data</a> and <a href="#">map data</a></small></p>
+        </footer>
+</body>
+</html>
